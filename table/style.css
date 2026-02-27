@@ -1,0 +1,27 @@
+table {
+  font-family: sans-serif;
+  border-collapse: collapse;
+}
+
+caption,
+th,
+tr,
+td {
+  border: 1px solid #000;
+  text-align: center;
+  padding: 3px;
+}
+
+caption {
+  font-weight: 700;
+  border-bottom: none;
+}
+
+.one {
+  text-align: right;
+}
+
+.weekend,
+.one {
+  color: #fc0000;
+}
