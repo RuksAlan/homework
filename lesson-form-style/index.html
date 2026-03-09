@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cтилизация формы</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset class="form">
+        <legend class="form-group">Ваши личные данные</legend>
+        <label class="form-group-name">
+          Ваше имя
+          <input
+            class="input"
+            type="text"
+            name="name"
+            placeholder="Имя"
+            required
+          />
+        </label>
+        <label class="form-group-name">
+          Ваш возраст
+          <input
+            class="input"
+            type="number"
+            inputmode="numeric"
+            name="age"
+            placeholder="Возраст"
+            required
+          />
+        </label>
+        <label class="form-group-name">
+          Ваш номер телефона
+          <input
+            class="input"
+            type="tel"
+            name="tel"
+            inputmode="tel"
+            placeholder="Телефон"
+            required
+          />
+        </label>
+        <label class="form-group-name">
+          Ваша почта
+          <input
+            class="input"
+            type="email"
+            name="email"
+            placeholder="Почта"
+            required
+          />
+        </label>
+        <label class="form-group-name">
+          Сообщение
+          <textarea
+            class="textarea"
+            name="message"
+            placeholder="Ваше сообщение"
+            required
+          ></textarea>
+        </label>
+        <label class="form-group-name checkbox-label">
+          <input class="checkbox" type="checkbox" required />
+          <span class="checkbox-text">Я принимаю правила</span>
+        </label>
+        <button class="button">Отправить</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
