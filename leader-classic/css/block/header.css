@@ -1,0 +1,123 @@
+.header__container {
+  padding-top: 35px;
+}
+
+.header__wrapper {
+  padding: 0 10px 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: var(--bg-header);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title {
+  font-family: var(--third-family);
+  font-size: 12px;
+  line-height: 119%;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  max-width: 105px;
+}
+
+.header__language {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.select {
+  border: none;
+  background: transparent;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+
+.select-item {
+  background-color: var(--bg-main);
+}
+
+.header__list {
+  display: flex;
+  gap: 50px;
+}
+
+.header__item-link {
+  position: relative;
+  color: var(--main-color);
+  text-decoration: none;
+  transition: all var(--transition-time);
+}
+
+.header__item-link::after {
+  content: "✨";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+@media (any-hover: hover) {
+  .header__item-link:hover {
+    background: radial-gradient(
+      3992.22% 112.45% at 8.04% 17.65%,
+      rgb(231, 170, 25) 0%,
+      rgb(203, 109, 156) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .header__item-link:hover::after {
+    opacity: 1;
+  }
+}
+
+.button__enter {
+  padding: 15px;
+  margin-right: 10px;
+  border: 1px solid #ce6a33;
+  border-radius: 20px;
+  background-color: var(--bg-stroke-button);
+  color: var(--main-color);
+  transition: transform var(--transition-time);
+}
+
+.button__enter:hover {
+  transform: scale(0.9);
+}
+
+.button__enter:active {
+  background: var(--bg-header);
+}
+
+.button__open-account {
+  font-weight: 700;
+  text-align: center;
+  padding: 13px 25px;
+  border-radius: 20px;
+  box-shadow:
+    inset 0 -4px 0 0 #8f4119,
+    0 3px 49px -3px rgba(226, 128, 72, 0.76);
+  background: linear-gradient(
+    57deg,
+    #dc6b30 0%,
+    #e4864f 42.19%,
+    #ffbe82 72.92%,
+    #e49031 100%
+  );
+  transition: transform var(--transition-time);
+}
+
+.button__open-account:hover {
+  transform: scale(0.9);
+}

@@ -1,0 +1,51 @@
+:root {
+  /* font-family */
+  --font-family: "Gotham Pro", sans-serif;
+  --second-family: "Montserrat", sans-serif;
+  --third-family: "Latin CT Wide", sans-serif;
+
+  /* container */
+  --container-width: 1240px;
+  --container-padding: 35px;
+
+  /* colors */
+  --main-color: #ffffff;
+  --second-color: #000000;
+  --numbers-color: #4bd879;
+  --accent-color: #c5c5c5;
+  --bonus-color: #e7e7e7;
+  --invest-color: #fafafa;
+
+  /* background */
+  --bg-main: #0e0e12;
+  --bg-header: linear-gradient(126deg, rgb(255 255 255 / 7%) 0%);
+  --bg-fill-button: linear-gradient(
+    57deg,
+    #dc6b30 0%,
+    #e4864f 42.19%,
+    #ffbe82 72.92%,
+    #e49031 100%
+  );
+  --bg-stroke-button: linear-gradient(
+    137deg,
+    #16373a 0%,
+    #0a1f24 29.28%,
+    #0b1b23 49.12%,
+    #122b31 100%
+  );
+  --bg-second-button: linear-gradient(322deg, #82c36d 0%, #25523e 100%);
+
+  /* shadow */
+  --shadow-main-button:
+    inset 0 -4px 0 0 #8f4119, 0 3px 49px -3px rgba(226, 128, 72, 0.76);
+
+  /* transition */
+  --transition-time: 0.2s;
+
+  /* layers */
+  --layer-negative: -1;
+  --layer-0: 0;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+}
