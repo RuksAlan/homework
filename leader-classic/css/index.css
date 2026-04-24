@@ -6,3 +6,6 @@
 
 /* blocks */
 @import "./block/header.css";
+@import "./block/buttons.css";
+@import "./block/burger.css";
+@import "./block/chance-timer.css";

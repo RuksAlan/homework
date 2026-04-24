@@ -5,12 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
     <title>Leader Classic</title>
+    <script defer src="./js/index.js" type="module"></script>
   </head>
   <body class="page__body">
     <header class="header">
       <div class="header__container container">
         <div class="header__wrapper">
-          <a href="#" class="header__logo">
+          <button
+            class="header__burger burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header__menu"
+          >
+            <svg width="24" height="24">
+              <use
+                class="burger__icon-menu"
+                href="./icons/sprite.svg#menu-burger"
+              ></use>
+              <use
+                class="burger__icon-cross"
+                href="./icons/sprite.svg#menu-cross"
+              ></use>
+            </svg>
+          </button>
+          <a href="/" class="header__logo">
             <img
               class="header__logo-img"
               src="./icons/logo-img.svg"
@@ -20,43 +38,66 @@
             />
             <p class="header__logo-title logo-title">LEADER CLASSIC</p>
           </a>
-          <div class="header__language">
-            <img
-              class="header__language-img"
-              width="23"
-              height="23"
-              src="./icons/flag-ru.png"
-              alt="Российский флаг"
-            />
-            <select class="select" name="language" id="laguage-select">
-              <option class="select-item" value="ru">RU</option>
-              <option class="select-item" value="eng">ENG</option>
-            </select>
+          <div class="header__menu" id="header__menu">
+            <div class="header__language">
+              <img
+                class="header__language-img"
+                width="23"
+                height="23"
+                src="./icons/flag-ru.png"
+                alt="Российский флаг"
+              />
+              <select class="select" name="language" id="laguage-select">
+                <option class="select-item" value="ru">RU</option>
+                <option class="select-item" value="eng">ENG</option>
+              </select>
+            </div>
+            <nav class="menu header__nav" aria-label="Главное меню">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a href="#tariffs" class="menu__item-link">Тарифы</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#bonus" class="menu__item-link">Бонус</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#referral" class="menu__item-link">Реферальная</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#contacts" class="menu__item-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="header_nav-list">
-            <li class="header__list">
-              <ul class="header__list-item">
-                <a href="#" class="header__item-link">Тарифы</a>
-              </ul>
-              <ul class="header__list-item">
-                <a href="#" class="header__item-link">Бонус</a>
-              </ul>
-              <ul class="header__list-item">
-                <a href="#" class="header__item-link">Реферальная</a>
-              </ul>
-              <ul class="header__list-item">
-                <a href="#" class="header__item-link">Контакты</a>
-              </ul>
-            </li>
-          </nav>
           <div class="header__buttons">
-            <button class="button__enter button-stroke">Войти</button>
-            <button class="button__open-account button-fill">
-              Открыть счет
-            </button>
+            <button class="button__enter">Войти</button>
+            <button class="button__open-account">Открыть счет</button>
           </div>
         </div>
       </div>
     </header>
+    <section class="section">
+      <div class="chance__container container">
+        <div class="chance__info">
+          <img src="./images/gift-img.png" alt="Подарок" />
+          <div class="chance__info-text">
+            <p class="chance__title">Станьте миллионером с Leader Classic</p>
+            <p class="chance__text">
+              Откройте счет, инвестируйте в фонды Leader Classic и получите шанс
+              выиграть один из 100 000 000 ₽
+            </p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="timer__item timer__days">00</div>
+          <div class="separator">:</div>
+          <div class="timer__item timer__hours">00</div>
+          <div class="separator">:</div>
+          <div class="timer__item timer__minutes">00</div>
+          <div class="separator">:</div>
+          <div class="timer__item timer__seconds">00</div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

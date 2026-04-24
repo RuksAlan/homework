@@ -5,8 +5,8 @@
   --third-family: "Latin CT Wide", sans-serif;
 
   /* container */
-  --container-width: 1240px;
-  --container-padding: 35px;
+  --container-width: 1570px;
+  --container-padding: 15px;
 
   /* colors */
   --main-color: #ffffff;
@@ -18,7 +18,8 @@
 
   /* background */
   --bg-main: #0e0e12;
-  --bg-header: linear-gradient(126deg, rgb(255 255 255 / 7%) 0%);
+  --bg-color: #1b1b1c;
+  --bg-header: linear-gradient(126deg, rgba(255, 255, 255, 0.085) 0%);
   --bg-fill-button: linear-gradient(
     57deg,
     #dc6b30 0%,
@@ -41,6 +42,7 @@
 
   /* transition */
   --transition-time: 0.2s;
+  --transition-time-burger: 0.3s;
 
   /* layers */
   --layer-negative: -1;

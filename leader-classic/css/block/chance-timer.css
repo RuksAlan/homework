@@ -1,0 +1,82 @@
+@media (width <= 968px) {
+  .section {
+    background: var(--bg-header);
+  }
+}
+
+@media (width > 968px) {
+  .chance__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px 30px 10px;
+    background: var(--bg-header);
+    border-radius: 20px;
+  }
+}
+
+@media (width <= 968px) {
+  .chance__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    padding: 10px 0 20px;
+    gap: 20px;
+  }
+}
+
+@media (width > 968px) {
+  .chance__info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (width <= 968px) {
+  .chance__info {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+  }
+}
+
+.chance__info-text {
+  max-width: 962px;
+}
+
+.chance__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.chance__text {
+  font-weight: 400;
+  color: #eae9e9;
+}
+
+.timer {
+  display: grid;
+  grid-template-columns: 4.5rem 0.5rem 4.5rem 0.5rem 4.5rem 0.5rem 4.5rem;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: -0.08em;
+  color: #fff;
+  justify-items: center;
+}
+
+.timer__item {
+  position: relative;
+}
+
+.timer__item::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.875rem;
+  color: #424242;
+}

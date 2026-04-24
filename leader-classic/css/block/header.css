@@ -1,19 +1,37 @@
-.header__container {
-  padding-top: 35px;
+@media (width > 968px) {
+  .header__container {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
 }
 
-.header__wrapper {
-  padding: 0 10px 60px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 20px;
-  background: var(--bg-header);
+@media (width <= 968px) {
+  .header__container {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (width > 968px) {
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    gap: clamp(40px, -6.78rem + 15.55vw, 190px);
+  }
+}
+
+@media (width <= 968px) {
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    gap: clamp(10px, 0.008rem + 3.09vw, 20px);
+  }
 }
 
 .header__logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  gap: 5px;
 }
 
 .logo-title {
@@ -25,10 +43,62 @@
   max-width: 105px;
 }
 
-.header__language {
-  display: flex;
-  align-items: center;
-  gap: 3px;
+@media (width > 968px) {
+  .header__menu {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: clamp(20px, -1.958rem + 6.34vw, 70px);
+  }
+}
+
+@media (width <= 968px) {
+  .header__menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    z-index: var(--layer-2);
+    padding-top: 125px;
+    padding-left: 15px;
+    min-width: 225px;
+    background-color: var(--bg-color);
+    box-shadow: -4px 0 20px var(--accent-color);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      left var(--transition-time-burger),
+      opacity var(--transition-time-burger),
+      visibility var(--transition-time-burger);
+    /* display: none; */
+  }
+
+  .header__menu--open {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header__menu .menu__list {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+  }
+}
+
+@media (width > 968px) {
+  .header__language {
+    display: flex;
+    gap: 3px;
+    cursor: pointer;
+  }
+}
+
+@media (width <= 968px) {
+  .header__language {
+    display: flex;
+    margin-bottom: 15px;
+  }
 }
 
 .select {
@@ -37,87 +107,45 @@
   font-weight: 400;
   font-size: 18px;
   color: #fff;
+  cursor: pointer;
 }
 
 .select-item {
   background-color: var(--bg-main);
 }
 
-.header__list {
+.menu__list {
   display: flex;
-  gap: 50px;
+  gap: clamp(20px, -1.958rem + 6.34vw, 90px);
 }
 
-.header__item-link {
+.menu__item-link {
   position: relative;
   color: var(--main-color);
   text-decoration: none;
   transition: all var(--transition-time);
 }
 
-.header__item-link::after {
-  content: "✨";
+.menu__item-link::after {
+  content: "";
+  background-image: url(../../icons/stars-icon.png);
   position: absolute;
   top: 50%;
   left: 100%;
-  width: 20px;
-  height: 20px;
   transform: translateY(-50%);
   opacity: 0;
 }
 
-@media (any-hover: hover) {
-  .header__item-link:hover {
-    background: radial-gradient(
-      3992.22% 112.45% at 8.04% 17.65%,
-      rgb(231, 170, 25) 0%,
-      rgb(203, 109, 156) 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .header__item-link:hover::after {
-    opacity: 1;
-  }
-}
-
-.button__enter {
-  padding: 15px;
-  margin-right: 10px;
-  border: 1px solid #ce6a33;
-  border-radius: 20px;
-  background-color: var(--bg-stroke-button);
-  color: var(--main-color);
-  transition: transform var(--transition-time);
-}
-
-.button__enter:hover {
-  transform: scale(0.9);
-}
-
-.button__enter:active {
-  background: var(--bg-header);
-}
-
-.button__open-account {
-  font-weight: 700;
-  text-align: center;
-  padding: 13px 25px;
-  border-radius: 20px;
-  box-shadow:
-    inset 0 -4px 0 0 #8f4119,
-    0 3px 49px -3px rgba(226, 128, 72, 0.76);
-  background: linear-gradient(
-    57deg,
-    #dc6b30 0%,
-    #e4864f 42.19%,
-    #ffbe82 72.92%,
-    #e49031 100%
+.menu__item-link:hover {
+  background: radial-gradient(
+    3992.22% 112.45% at 8.04% 17.65%,
+    rgb(231, 170, 25) 0%,
+    rgb(203, 109, 156) 100%
   );
-  transition: transform var(--transition-time);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.button__open-account:hover {
-  transform: scale(0.9);
+.menu__item-link:hover::after {
+  opacity: 1;
 }
