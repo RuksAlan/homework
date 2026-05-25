@@ -1,5 +1,5 @@
 @media (width <= 968px) {
-  .section {
+  .chance__section {
     background: var(--bg-header);
   }
 }
@@ -37,8 +37,14 @@
   .chance__info {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
     gap: 10px;
   }
+}
+
+.chance__img {
+  width: 62px;
+  height: 62px;
 }
 
 .chance__info-text {
@@ -61,7 +67,6 @@
   grid-template-columns: 4.5rem 0.5rem 4.5rem 0.5rem 4.5rem 0.5rem 4.5rem;
   font-weight: 400;
   font-size: 30px;
-  letter-spacing: -0.08em;
   color: #fff;
   justify-items: center;
 }

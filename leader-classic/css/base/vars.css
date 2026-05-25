@@ -5,7 +5,7 @@
   --third-family: "Latin CT Wide", sans-serif;
 
   /* container */
-  --container-width: 1570px;
+  --container-width: 1240px;
   --container-padding: 15px;
 
   /* colors */
@@ -35,14 +35,18 @@
     #122b31 100%
   );
   --bg-second-button: linear-gradient(322deg, #82c36d 0%, #25523e 100%);
+  --bg-investments: #262626;
+  --bg-footer: 0 0 500px 100px #599a71;
 
   /* shadow */
+  --shadow-green: 0 0 30px 3px #166b37;
   --shadow-main-button:
     inset 0 -4px 0 0 #8f4119, 0 3px 49px -3px rgba(226, 128, 72, 0.76);
 
   /* transition */
   --transition-time: 0.2s;
   --transition-time-burger: 0.3s;
+  --transition-time-arrow: 0.5s;
 
   /* layers */
   --layer-negative: -1;

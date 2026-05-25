@@ -52,6 +52,6 @@ const timer = new CountdownTimer(
     elSeconds.dataset.title = time.secondsTitle;
   },
   () => {
-    document.querySelector(".timer").textContent = "С Новым Годом!";
+    document.querySelector(".timer").textContent = "Акция закончилась!";
   },
 );

@@ -1,3 +1,7 @@
+.burger {
+  background-color: transparent;
+}
+
 @media (width > 968px) {
   .burger {
     display: none;
@@ -24,4 +28,8 @@
 .burger__icon-cross,
 .burger--open .burger__icon-menu {
   display: none;
+}
+
+.img-burger {
+  mix-blend-mode: multiply;
 }

@@ -16,7 +16,7 @@
   .header__wrapper {
     display: flex;
     align-items: center;
-    gap: clamp(40px, -6.78rem + 15.55vw, 190px);
+    gap: clamp(15px, -6.78rem + 15.55vw, 70px);
   }
 }
 
@@ -32,6 +32,7 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
+  text-decoration: none;
 }
 
 .logo-title {
