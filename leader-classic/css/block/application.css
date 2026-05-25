@@ -156,7 +156,7 @@
   }
 }
 
-input {
+.application__input {
   font-weight: 300;
   font-size: 15px;
   border: 4px solid rgba(255, 255, 255, 0.29);
@@ -166,8 +166,8 @@ input {
   transition: box-shadow var(--transition-time);
 }
 
-input:focus-visible,
-input:hover {
+.application__input:focus-visible,
+.application__input:hover {
   outline: none;
   border-radius: 20px;
   box-shadow: var(--shadow-green);

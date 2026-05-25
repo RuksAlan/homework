@@ -36,7 +36,7 @@ const elSeconds = document.querySelector(".timer__seconds");
 
 // Конечная дата
 const now = new Date();
-const deadline = new Date(`${now.getFullYear()}-05-31T23:59:59`);
+const deadline = new Date(`${now.getFullYear()}-06-31T23:59:59`);
 
 // Создание нового таймера
 const timer = new CountdownTimer(

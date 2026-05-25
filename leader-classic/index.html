@@ -502,6 +502,12 @@
     <section class="portfolio section">
       <div class="portfolio__container container">
         <div class="portfolio__profitability">
+          <div class="gauge">
+            <svg viewBox="0 0 300 180" class="gaugeSvg">
+              <path class="track" d="M 30 150 A 120 120 0 0 1 270 150" />
+              <path class="progress" d="M 30 150 A 120 120 0 0 1 270 150" />
+            </svg>
+          </div>
           <div class="profitability">
             <p class="profitability__info">Доходность</p>
             <p class="profitability__procent" id="profitability--procent">
@@ -512,7 +518,7 @@
             </p>
           </div>
           <div class="profitability__input">
-            <input id="input--risk" type="range" min="1" max="100" value="30" />
+            <input id="range" type="range" min="0" max="100" value="25" />
           </div>
           <div class="profitability__choice">
             <label class="choice__select">
@@ -749,6 +755,7 @@
         <fieldset class="application__connection">
           <label class="name">
             <input
+              class="application__input"
               type="text"
               name="name"
               placeholder="Ваше имя:"
@@ -758,6 +765,7 @@
           </label>
           <label class="tel">
             <input
+              class="application__input"
               type="tel"
               name="tel"
               placeholder="+7 --- --- -- --"
@@ -768,6 +776,7 @@
           </label>
           <label class="email">
             <input
+              class="application__input"
               type="email"
               name="email"
               placeholder="Email:"
@@ -849,5 +858,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

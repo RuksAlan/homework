@@ -39,6 +39,10 @@
   background: var(--bg-investments);
 }
 
+.clients__card:hover .clients__details::after {
+  transform: translateX(50%);
+}
+
 .clients__card-item {
   display: flex;
   flex-direction: column;
@@ -72,8 +76,4 @@
   width: 14px;
   height: 7px;
   transition: transform var(--transition-time-arrow);
-}
-
-.clients__details:hover::after {
-  transform: translateX(50%);
 }

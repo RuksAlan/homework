@@ -6,11 +6,20 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
   gap: 50px;
 }
 
+.portfolio__profitability {
+  position: relative;
+}
+
 .profitability {
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .profitability__info {
@@ -20,7 +29,7 @@
 
 .profitability__procent {
   font-weight: 500;
-  font-size: clamp(40px, 1.977rem + 2.61vw, 65px);
+  font-size: 40px;
 }
 
 .profitability__risk {
@@ -33,15 +42,12 @@
     rgba(66, 89, 74, 0.4) 0%,
     rgba(101, 204, 125, 0.22) 100%
   );
-  padding: 5px 15px;
-  margin: 20px auto;
+  padding: 5px;
+  width: 150px;
 }
 
-#input--risk {
-  width: clamp(6.25rem, 2.509rem + 15.96vw, 16.875rem);
-  accent-color: #6adb83;
-  transition: box-shadow var(--transition-time);
-  margin-bottom: 20px;
+.profitability__input {
+  margin: 20px auto;
 }
 
 .profitability__choice {
@@ -127,4 +133,38 @@
   font-weight: 500;
   font-size: clamp(20px, 1.114rem + 0.68vw, 26px);
   margin-top: 20px;
+}
+
+.gauge {
+  position: absolute;
+  top: -35%;
+  right: -30%;
+  width: 360px;
+}
+
+.gaugeSvg {
+  width: 100%;
+  overflow: visible;
+}
+
+.track,
+.progress {
+  fill: none;
+  stroke-width: 18;
+  stroke-linecap: round;
+}
+
+.track {
+  stroke: rgba(255, 255, 255, 0.35);
+}
+
+.progress {
+  stroke: #6cff2f;
+  filter: drop-shadow(0 0 8px #6cff2f);
+  transition: stroke-dashoffset 0.25s;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #6cff2f;
 }

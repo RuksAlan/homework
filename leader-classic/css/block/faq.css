@@ -16,7 +16,8 @@
 
 @media (width > 968px) {
   .faq__container {
-    justify-content: space-between;
+    gap: 50px;
+    justify-content: space-evenly;
   }
 }
 
@@ -40,7 +41,7 @@
   .faq__info-text {
     font-size: clamp(15px, 0.824rem + 0.57vw, 20px);
     line-height: 160%;
-    max-width: 300px;
+    max-width: 600px;
   }
 }
 
