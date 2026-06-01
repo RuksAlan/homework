@@ -4,7 +4,7 @@ for (let i = 1; i <= 20; i++) {
   if (i % 4 === 0) {
     continue;
   }
-  console.log(i);
+  console.log(`Число, которое делится без остатка на 4: ${i}`);
 }
 
 // Задача 2
@@ -16,7 +16,7 @@ for (let i = 1; i <= number; i++) {
   factorial = factorial * i;
 }
 
-console.log(factorial);
+console.log(`Ваш факториал: ${factorial}`);
 
 // Задача 3
 const boardSize = 8;
