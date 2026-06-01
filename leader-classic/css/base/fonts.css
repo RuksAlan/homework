@@ -1,0 +1,86 @@
+@font-face {
+  font-family: Gotham Pro;
+  src:
+    local("GothamPro Light"),
+    local("GothamPro-Light"),
+    url("../../fonts/GothamProLight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gotham Pro;
+  src:
+    local("GothamPro Regular"),
+    local("GothamPro-Regular"),
+    url("../../fonts/GothamProRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gotham Pro;
+  src:
+    local("GothamPro Medium"),
+    local("GothamPro-Medium"),
+    url("../../fonts/GothamProMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gotham Pro;
+  src:
+    local("GothamPro Bold"),
+    local("GothamPro-Bold"),
+    url("../../fonts/GothamProBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src:
+    local("Montserrat Light"),
+    local("Montserrat-Light"),
+    url("../../fonts/MontserratLight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src:
+    local("Montserrat Regular"),
+    local("Montserrat-Regular"),
+    url("../../fonts/MontserratRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+  src:
+    local("Roboto Regular"),
+    local("Roboto-Regular"),
+    url("../../fonts/RobotoRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Latin CT Wide;
+  src:
+    local("LatinCTWide"),
+    url("../../fonts/LatinCTWide.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

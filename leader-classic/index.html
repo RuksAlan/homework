@@ -1,0 +1,865 @@
+<!doctype html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Leader Classic</title>
+    <script defer src="./js/index.js" type="module"></script>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__wrapper">
+          <button
+            class="header__burger burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header__menu"
+          >
+            <svg width="24" height="24">
+              <use
+                class="burger__icon-menu"
+                href="./icons/sprite.svg#menu-burger"
+              ></use>
+              <use
+                class="burger__icon-cross"
+                href="./icons/sprite.svg#menu-cross"
+              ></use>
+            </svg>
+          </button>
+          <a href="/" class="header__logo">
+            <img
+              class="header__logo-img"
+              src="./icons/logo-img.svg"
+              width="52"
+              height="65"
+              alt="Лого LEADER CLASSIC"
+            />
+            <p class="header__logo-title logo-title">LEADER CLASSIC</p>
+          </a>
+          <div class="header__menu" id="header__menu">
+            <div class="header__language">
+              <img
+                class="header__language-img"
+                width="23"
+                height="23"
+                src="./icons/flag-ru.png"
+                alt="Российский флаг"
+              />
+              <select class="select" name="language" id="laguage-select">
+                <option class="select-item" value="ru">RU</option>
+                <option class="select-item" value="eng">ENG</option>
+              </select>
+            </div>
+            <nav class="menu header__nav" aria-label="Главное меню">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a href="#tariffs" class="menu__item-link">Тарифы</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#bonus" class="menu__item-link">Бонус</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#referral" class="menu__item-link">Реферальная</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#contacts" class="menu__item-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__buttons">
+            <button class="button__enter">Войти</button>
+            <a href="#" class="button__open-account">Открыть счет</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <aside class="chance__aside">
+      <div class="chance__container container">
+        <div class="chance__info">
+          <img
+            class="chance__img"
+            src="./images/gift-img.png"
+            width="62"
+            height="62"
+            alt="Подарок"
+          />
+          <div class="chance__info-text">
+            <h3 class="chance__title">Станьте миллионером с Leader Classic</h3>
+            <p class="chance__text">
+              Откройте счет, инвестируйте в фонды Leader Classic и получите шанс
+              выиграть один из 100 000 000 ₽
+            </p>
+          </div>
+        </div>
+        <div class="timer">
+          <div class="timer__item timer__days">00</div>
+          <div class="separator">:</div>
+          <div class="timer__item timer__hours">00</div>
+          <div class="separator">:</div>
+          <div class="timer__item timer__minutes">00</div>
+          <div class="separator">:</div>
+          <div class="timer__item timer__seconds">00</div>
+        </div>
+      </div>
+    </aside>
+    <section class="top-shares__section section">
+      <div class="top-shares__container container">
+        <div class="top-shares__wrapper">
+          <h1 class="top-shares__title title-large">
+            ТОП-5 акций с доходностью до 10-30% уже в 2022 году
+          </h1>
+          <ul class="top-shares__list">
+            <li class="top-shares__item">
+              Открытие брокерского счета за 5 минут без визита в офис
+            </li>
+            <li class="top-shares__item">
+              Доступ к ценным бумагам с любого устройства
+            </li>
+            <li class="top-shares__item">Поддержка в чате 24/7</li>
+          </ul>
+          <div class="top-shares__buttons">
+            <a href="#" class="button__fill button__checklist">
+              Скачать ТОП-5 акций
+            </a>
+            <a href="#" class="button__empty">Открыть счет</a>
+          </div>
+          <div class="top-shares__users">
+            <img
+              class="users__img"
+              src="./images/users-img.png"
+              alt="Клиенты в кружочках"
+            />
+            <p class="users__description">
+              Сейчас инвестируют 100 000+ пользователей
+            </p>
+          </div>
+        </div>
+        <img class="top-shares__image-phone" src="./images/phone.png" alt="" />
+        <img class="top-shares__arrow" src="./icons/arrow-shares.svg" alt="" />
+      </div>
+    </section>
+    <section class="companies section">
+      <div class="companies__container container">
+        <h2 class="companies__title title-large">
+          Ваши деньги <br />
+          способны на большее
+        </h2>
+        <p class="companies__subtitle subtitle">
+          Сколько бы вы заработали, инвестируй
+          <strong class="companies__accent">100 000 ₽</strong> год назад?
+        </p>
+        <div class="companies__company">
+          <div class="companies__company-item tesla">
+            <img
+              class="companies__img"
+              src="./images/companies/tesla-img.png"
+              alt="Логотип Tesla"
+            />
+            <p class="companies__percent">+83.97%</p>
+            <p class="companies__price">+72.000₽</p>
+          </div>
+          <div class="companies__company-item amazon">
+            <img
+              class="companies__img"
+              src="./images/companies/amazon-img.png"
+              alt="Логотип Amazon"
+            />
+            <p class="companies__percent">+4.11%</p>
+            <p class="companies__price">+72.000₽</p>
+          </div>
+          <div class="companies__company-item apple">
+            <img
+              class="companies__img"
+              src="./images/companies/apple-img.png"
+              alt="Логотип Apple"
+            />
+            <p class="companies__percent">+26.36%</p>
+            <p class="companies__price">+72.000₽</p>
+          </div>
+          <div class="companies__company-item yandex">
+            <img
+              class="companies__img"
+              src="./images/companies/yandex-img.png"
+              alt="Логотип Yandex"
+            />
+            <p class="companies__percent">+17.19%</p>
+            <p class="companies__price">+72.000₽</p>
+          </div>
+          <div class="companies__company-item facebook">
+            <img
+              class="companies__img"
+              src="./images/companies/facebook-img.png"
+              alt="Логотип Facebook"
+            />
+            <p class="companies__percent">+31.32%</p>
+            <p class="companies__price">+72.000₽</p>
+          </div>
+          <div class="companies__company-item microsoft">
+            <img
+              class="companies__img"
+              src="./images/companies/microsoft-img.png"
+              alt="Логотип Tesla"
+            />
+            <p class="companies__percent">+38.99%</p>
+            <p class="companies__price">+72.000₽</p>
+          </div>
+        </div>
+        <p class="companies__description subtitle">
+          И еще более 10 000 других ценных бумаг доступно
+          <strong class="companies__accent">в каталоге</strong>
+        </p>
+        <a href="#" class="companies__button button__fill">Получить каталог</a>
+      </div>
+    </section>
+    <section class="tools section">
+      <div class="tools__container container">
+        <h2 class="tools__title title-large">Большой выбор инструментов</h2>
+        <div class="tools__wrapper">
+          <div class="tools__item">
+            <img
+              class="tools__item-img"
+              src="./icons/tools-icons/forex-img.png"
+              alt="Изображение Forex"
+            />
+            <h3 class="tools__item-title">Forex</h3>
+            <p class="tools__item-description">
+              Trade 70 major, minor & exotic currency pairs with competitive
+              trading conditions.
+            </p>
+          </div>
+          <div class="tools__item">
+            <img
+              class="tools__item-img"
+              src="./icons/tools-icons/metals-img.png"
+              alt="Изображение Metals"
+            />
+            <h3 class="tools__item-title">Metals</h3>
+            <p class="tools__item-description">
+              Trade metals commodities such as Gold, Silver & Platinum.
+            </p>
+          </div>
+          <div class="tools__item">
+            <img
+              class="tools__item-img"
+              src="./icons/tools-icons/indices-img.png"
+              alt="Изображение Indices"
+            />
+            <h3 class="tools__item-title">Indices</h3>
+            <p class="tools__item-description">
+              Trade Major and Minor Index CFDs Spot and Futures from around the
+              globe.
+            </p>
+          </div>
+          <div class="tools__item">
+            <img
+              class="tools__item-img"
+              src="./icons/tools-icons/crypto-img.png"
+              alt="Изображение Cryptocurrencies"
+            />
+            <h3 class="tools__item-title">Cryptocurrencies</h3>
+            <p class="tools__item-description">
+              Trade Bitcoin, Ether, Doge & more crypto & altcoin CFDs
+            </p>
+          </div>
+          <div class="tools__item">
+            <img
+              class="tools__item-img"
+              src="./icons/tools-icons/shares-img.png"
+              alt="Изображение Shares"
+            />
+            <h3 class="tools__item-title">Shares</h3>
+            <p class="tools__item-description">
+              Hundreds of public companies from the US, UK, France & Germany
+              available to trade.
+            </p>
+          </div>
+          <div class="tools__item">
+            <img
+              class="tools__item-img"
+              src="./icons/tools-icons/energies-img.png"
+              alt="Изображение Energies"
+            />
+            <h3 class="tools__item-title">Energies</h3>
+            <p class="tools__item-description">
+              Discover opportunities on UK & US Crude Oil, as well as Natural
+              Gas Spot and Future CFDs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="investments section">
+      <div class="investments__container container">
+        <h2 class="investments__title title-large">
+          Инвестиции доступные каждому
+        </h2>
+        <p class="investments__subtitle subtitle">
+          Простой сервис с подсказками и поддержкой 24/7 на каждом этапе
+        </p>
+        <div class="investments__wrapper">
+          <article class="investments__card">
+            <p class="investments__card-step">ШАГ 1</p>
+            <h3 class="investments__card-subtitle">
+              Заполнить регистрационную анкету
+            </h3>
+            <p class="investments__description">
+              Нужно указать основные данные о себе: имя, номер телефона, e-mail
+              и пароль для входа.
+            </p>
+            <img
+              class="investments__img"
+              src="./images/investments/1.png"
+              width="75"
+              alt="Цифра один"
+            />
+          </article>
+          <article class="investments__card">
+            <p class="investments__card-step">ШАГ 2</p>
+            <h3 class="investments__card-subtitle card-margin">
+              Внести деньги <br />
+              на счет
+            </h3>
+            <p class="investments__description">
+              Вы можете использовать несколько платежных систем для пополнения
+              депозита, включая систему MidexPay и кошелек Bitcoin.
+            </p>
+            <img
+              class="investments__img"
+              src="./images/investments/2.png"
+              width="125"
+              alt="Цифра два"
+            />
+          </article>
+          <article class="investments__card">
+            <p class="investments__card-step">ШАГ 3</p>
+            <h3 class="investments__card-subtitle card-margin">
+              Приступить <br />
+              к онлайн-трейдингу
+            </h3>
+            <p class="investments__description">
+              Сразу после пополнения депозита торговля через веб-терминал или
+              мобильную платформу будет доступна.
+            </p>
+            <img
+              class="investments__img"
+              src="./images/investments/3.png"
+              width="127"
+              alt="Цифра три"
+            />
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="bonus section">
+      <div class="bonus__container container">
+        <h2 class="bonus__title title-large">
+          Каждый достоин <br />
+          второго шанса
+        </h2>
+        <p class="bonus__subtitle subtitle">
+          Купите свои первые акции без риска, мы вернем вам 100$ на счет в
+          случае проигрыша
+        </p>
+        <div class="bonus__buttons">
+          <a href="#" class="button__fill">Получить бонус</a>
+          <a href="#" class="button__empty">Открыть демо-счет</a>
+        </div>
+      </div>
+    </section>
+    <section class="clients section">
+      <div class="clients__container container">
+        <h2 class="clients__title title-large">
+          100 000+ клиентов уже инвестируют с нами
+        </h2>
+        <div class="clients__wrapper">
+          <a href="#" class="clients__card">
+            <div class="clients__card-item">
+              <img
+                src="./icons/clients-icons/planet-icon.svg"
+                width="48"
+                height="48"
+                alt=""
+              />
+              <h3 class="clients__subtitle">
+                Представительство компании в Европе
+              </h3>
+              <p class="clients__description">
+                В разных странах мира компания открывает собсвенные
+                представительства.
+              </p>
+            </div>
+            <p class="clients__details">Подробнее</p>
+          </a>
+          <a href="#" class="clients__card">
+            <div class="clients__card-item">
+              <img
+                src="./icons/clients-icons/card-icon.svg"
+                width="48"
+                height="48"
+                alt=""
+              />
+              <h3 class="clients__subtitle">Мгновенный ввод и вывод средств</h3>
+              <p class="clients__description">0% комиссия с депозита</p>
+            </div>
+            <p class="clients__details">Подробнее</p>
+          </a>
+          <a href="#" class="clients__card">
+            <div class="clients__card-item">
+              <img
+                src="./icons/clients-icons/person-icon.svg"
+                width="48"
+                height="48"
+                alt=""
+              />
+              <h3 class="clients__subtitle">Кредитное плечо до 1:1000</h3>
+              <p class="clients__description"></p>
+            </div>
+            <p class="clients__details">Подробнее</p>
+          </a>
+          <a href="#" class="clients__card">
+            <div class="clients__card-item">
+              <img
+                src="./icons/clients-icons/time-icon.svg"
+                width="44"
+                height="44"
+                alt=""
+              />
+              <h3 class="clients__subtitle">Время выполнения заказа - 30 мс</h3>
+              <p class="clients__description">
+                Средний показатель по отрасли - 500 мс
+              </p>
+            </div>
+            <p class="clients__details">Подробнее</p>
+          </a>
+          <a href="#" class="clients__card">
+            <div class="clients__card-item">
+              <img
+                src="./icons/clients-icons/cubs-icon.svg"
+                width="40"
+                height="40"
+                alt=""
+              />
+              <h3 class="clients__subtitle">250 торговых инструментов</h3>
+              <p class="clients__description">
+                Валютные пары, акции, металлы, индексы, облигации
+              </p>
+            </div>
+            <p class="clients__details">Подробнее</p>
+          </a>
+          <a href="#" class="clients__card">
+            <div class="clients__card-item">
+              <img
+                src="./icons/clients-icons/dollar-icon.svg"
+                width="40"
+                height="40"
+                alt=""
+              />
+              <h3 class="clients__subtitle">
+                Счета в евро, рублях, долларах США
+              </h3>
+              <p class="clients__description">
+                Пополните свой счет и сэкономьте на сборах за конвертацию
+              </p>
+            </div>
+            <p class="clients__details">Подробнее</p>
+          </a>
+          <a href="#" class="clients__card">
+            <div class="clients__card-item">
+              <img
+                src="./icons/clients-icons/gift-icon.svg"
+                width="40"
+                height="40"
+                alt=""
+              />
+              <h3 class="clients__subtitle">15% бонус на первый депозит</h3>
+              <p class="clients__description">
+                Может использоваться в торговле и во время просадки
+              </p>
+            </div>
+            <p class="clients__details">Подробнее</p>
+          </a>
+          <a href="#" class="clients__card">
+            <div class="clients__card-item">
+              <img
+                src="./icons/clients-icons/medal-icon.svg"
+                width="40"
+                height="40"
+                alt=""
+              />
+              <h3 class="clients__subtitle">
+                Инновационная торговая платформа МТ5
+              </h3>
+              <p class="clients__description">Доступно на IOS и Android</p>
+            </div>
+            <p class="clients__details">Подробнее</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio section">
+      <div class="portfolio__container container">
+        <div class="portfolio__profitability">
+          <div class="gauge">
+            <svg viewBox="0 0 300 180" class="gaugeSvg">
+              <path class="track" d="M 30 150 A 120 120 0 0 1 270 150" />
+              <path class="progress" d="M 30 150 A 120 120 0 0 1 270 150" />
+            </svg>
+          </div>
+          <div class="profitability">
+            <p class="profitability__info">Доходность</p>
+            <p class="profitability__procent" id="profitability--procent">
+              До 5%
+            </p>
+            <p class="profitability__risk" id="profitability--risk">
+              Низкий риск
+            </p>
+          </div>
+          <div class="profitability__input">
+            <input id="range" type="range" min="0" max="100" value="25" />
+          </div>
+          <div class="profitability__choice">
+            <label class="choice__select">
+              <input
+                type="radio"
+                class="select__radio"
+                name="choise"
+                value="self"
+                cheked
+              />
+              <p class="select__radio-text">Управляю деньгами сам</p>
+            </label>
+            <label class="choice__select">
+              <input
+                type="radio"
+                class="select__radio"
+                name="choise"
+                value="delegate"
+              />
+              <p class="select__radio-text">Доверяю управление</p>
+            </label>
+          </div>
+        </div>
+        <div class="portfolio__information">
+          <h2 class="offer__subtitle title-large">
+            Подберите индивидуальный инвестиционный портфель
+          </h2>
+          <p class="offer__description">
+            Покупайте российские и иностранные акции, облигации, валюту и другие
+            продукты в простом и удобном мобильном приложении для iOS и Android
+          </p>
+          <a href="#" class="offer__button button__fill">Получить каталог</a>
+        </div>
+      </div>
+      <div class="result__container container">
+        <div class="result">
+          <p class="result__numbers">60 000</p>
+          <p class="result__description">Активных инвесторов</p>
+        </div>
+        <div class="result">
+          <p class="result__numbers">150+</p>
+          <p class="result__description">Торговых инструментов</p>
+        </div>
+        <div class="result">
+          <p class="result__numbers">183 000 USD</p>
+          <p class="result__description">
+            Финансовый результат одного из инвесторов
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="invest-phone section">
+      <div class="invest-phone__container container">
+        <article class="invest-phone laptop">
+          <div class="invest-phone__info laptop--none">
+            <h2 class="invest-phone__title title-large">
+              Инвестируйте с телефона
+            </h2>
+            <p class="invest-phone__description subtitle">
+              Покупайте российские и иностранные акции, облигации, валюту и
+              другие продукты в простом и удобном мобильном приложении для iOS и
+              Android.
+            </p>
+          </div>
+          <img
+            class="invest-phone__img"
+            src="./images/phone-laptop-img.png"
+            width="700"
+            height="650"
+            alt="Два телефона на фоне ноутбука"
+          />
+        </article>
+        <article class="invest-phone phone">
+          <div class="invest-phone__info">
+            <h2 class="invest-phone__title title-large">
+              Инвестируйте с телефона
+            </h2>
+            <p class="invest-phone__description subtitle">
+              Покупайте российские и иностранные акции, облигации, валюту и
+              другие продукты в простом и удобном мобильном приложении для iOS и
+              Android.
+            </p>
+            <div class="invest-phone__buttons">
+              <a href="#" class="invest-phone__button apple-button">
+                Скачать для IOS
+              </a>
+              <a href="#" class="invest-phone__button android-button">
+                Скачать для Android
+              </a>
+            </div>
+          </div>
+          <img
+            class="invest-phone__img"
+            src="./images/two-iphone.png"
+            width="700"
+            height="450"
+            alt="Два телефона друг на друге"
+          />
+        </article>
+      </div>
+    </section>
+    <section class="faq section">
+      <div class="faq__container container">
+        <div class="faq__action">
+          <h2 class="faq__title title-large">Мне только спросить</h2>
+          <p class="faq__description subtitle">
+            Собрали в подсказках ответы на популярные вопросы об инвестициях и
+            сервисе
+          </p>
+          <a href="#" class="faq__button button__fill">
+            Получить консультацию
+          </a>
+        </div>
+        <div class="faq__info">
+          <details name="faq">
+            <summary class="faq__info-title">
+              Есть ли плата за обслуживание?
+            </summary>
+            <p class="faq__info-text">
+              Да, во многих случаях сервис инвестиций предполагает плату за
+              обслуживание. Это варьируется от тарифа, который выбирает клиент.
+              От 5000 рублей до 100.000 рублей
+            </p>
+          </details>
+          <details name="faq">
+            <summary class="faq__info-title">
+              Как вывести деньги со счёта?
+            </summary>
+            <p class="faq__info-text">
+              Чтобы вывести деньги со счёта, выполните следующие шаги: 1.
+              Войдите в личный кабинет. 2. Перейдите в раздел «Баланс» . 3.
+              Нажмите «Вывести средства». 4. Укажите сумму и выберите способ
+              вывода (банковская карта, электронный кошелёк и т. д.). 5. Введите
+              реквизиты для вывода. 6. Подтвердите операцию. Деньги поступят на
+              указанный счёт в течение 1-3 рабочих дней.
+            </p>
+          </details>
+          <details name="faq">
+            <summary class="faq__info-title">Какие налоги?</summary>
+            <p class="faq__info-text">
+              Это зависит от вашего статуса: ИП — платите налог по выбранной
+              системе налогообложения (УСН, ОСНО, ПСН и т. д.). Самозанятый —
+              налог на профессиональный доход: 4 % от продаж физлицам, 6% —
+              юрлицам. Физическое лицо без статуса — НДФЛ 13% (маркетплейс может
+              выступать налоговым агентом).
+            </p>
+          </details>
+          <details name="faq">
+            <summary class="faq__info-title">Где хранятся деньги?</summary>
+            <p class="faq__info-text">
+              Деньги от продаж хранятся на вашем балансе в личном кабинете. Это
+              внутренний счёт, привязанный к вашему профилю. Чтобы использовать
+              средства, их нужно вывести на банковскую карту, кошелёк или
+              расчётный счёт
+            </p>
+          </details>
+          <details name="faq">
+            <summary class="faq__info-title">Как открыть счёт?</summary>
+            <p class="faq__info-text">
+              Открыть брокерский счёт можно онлайн, это занимает в среднем 15-20
+              минут. Порядок действий: 1. Выберите надёжного брокера с лицензией
+              ЦБ РФ. 2. Заполните анкету на сайте брокера — понадобятся
+              паспортные данные. 3. Подтвердите личность: • через подтверждённую
+              учётную запись на «Госуслугах» (быстрее всего); или лично в офисе
+              брокера с паспортом. 4. Подпишите договор (электронно или на
+              бумаге). 5. Пополните счёт — и начинайте торговать. Открытие счёта
+              обычно бесплатное.
+            </p>
+          </details>
+          <details name="faq">
+            <summary class="faq__info-title">Как пополнить счёт?</summary>
+            <p class="faq__info-text">
+              1. Войдите в личный кабинет на сайте или в приложении брокера. 2.
+              Перейдите в раздел «Пополнить счёт». 3. Выберите способ
+              пополнения. 4. Укажите сумму. 5. Подтвердите операцию.
+            </p>
+          </details>
+          <details name="faq">
+            <summary class="faq__info-title">Что купить?</summary>
+            <p class="faq__info-text">
+              Единого ответа нет — выбор зависит от: - ваших целей (накопление,
+              доход, спекуляции); - горизонта инвестирования (кратко-, средне-
+              или долгосрочный); - уровня риска, который вы готовы принять.
+              Примеры активов: - акции — потенциал роста и дивиденды; -
+              облигации — стабильный доход с меньшим риском; - ETF -
+              диверсификация без глубокого анализа отдельных компаний; - валюты
+              — спекулятивная торговля на колебаниях курсов; - фьючерсы — для
+              опытных трейдеров
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="application section">
+      <div class="application__container container">
+        <h2 class="application__title title-large">
+          Оставьте заявку на открытие счёта
+        </h2>
+        <article class="application__tutorial">
+          <div class="application__tutorial-card">
+            <div class="application__img document">
+              <img src="./icons/app-icons/document-icon.svg" alt="" />
+            </div>
+            <h3 class="application__subtitle">Заполните заявку онлайн</h3>
+            <p class="application__description">
+              Необходимо: имя, номер телефона, e-mail и пароль для входа.
+            </p>
+          </div>
+          <div class="application__tutorial-card">
+            <div class="application__img card">
+              <img src="./icons/app-icons/card-icon.svg" alt="" />
+            </div>
+            <h3 class="application__subtitle card-subtitle">
+              Откроем счет за 5 минут
+            </h3>
+            <p class="application__description">
+              Вы можете использовать несколько платежных систем для пополнения
+              депозита, включая систему MidexPay и кошелек Bitcoin.
+            </p>
+          </div>
+          <div class="application__tutorial-card">
+            <div class="application__img dollar">
+              <img src="./icons/app-icons/dollar-icon.svg" alt="" />
+            </div>
+            <h3 class="application__subtitle">
+              Пополните счёт и начните инвестировать
+            </h3>
+            <p class="application__description">
+              Сразу после пополнения депозита будет доступна торговля через
+              веб-терминал или мобильную платформу.
+            </p>
+          </div>
+        </article>
+        <form action="">
+          <fieldset class="application__connection">
+            <label class="name">
+              <input
+                class="application__input"
+                type="text"
+                name="name"
+                placeholder="Ваше имя:"
+                title="Имя"
+                required
+              />
+            </label>
+            <label class="tel">
+              <input
+                class="application__input"
+                type="tel"
+                name="tel"
+                placeholder="+7 --- --- -- --"
+                title="Номер телефона"
+                inputmode="tel"
+                required
+              />
+            </label>
+            <label class="email">
+              <input
+                class="application__input"
+                type="email"
+                name="email"
+                placeholder="Email:"
+                inputmode="tel"
+                title="E-mail"
+                required
+              />
+            </label>
+            <button class="application__button button__fill">
+              Оставить заявку
+            </button>
+          </fieldset>
+        </form>
+      </div>
+      <div class="round"></div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__logo-message">
+          <a href="/" class="footer__logo">
+            <img
+              class="footer__logo-img"
+              src="./icons/logo-img.svg"
+              width="52"
+              height="65"
+              alt="Лого LEADER CLASSIC"
+            />
+            <p class="footer__logo-title logo-title">LEADER CLASSIC</p>
+          </a>
+          <ul class="footer__message-list">
+            <li class="message__list-item">
+              <a href="#" class="message__item-link">
+                <img
+                  src="./icons/message-icon/insta-icon.png"
+                  width="44"
+                  height="44"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="message__list-item">
+              <a href="#" class="message__item-link">
+                <img
+                  src="./icons/message-icon/face-icon.png"
+                  width="44"
+                  height="44"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="message__list-item">
+              <a href="#" class="message__item-link">
+                <img
+                  src="./icons/message-icon/vk-icon.png"
+                  width="44"
+                  height="44"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="message__list-item">
+              <a href="#" class="message__item-link">
+                <img
+                  src="./icons/message-icon/youtube-icon.png"
+                  width="44"
+                  height="44"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="footer__politic">Политика передачи данных</a>
+        </div>
+        <div class="footer__call">
+          <p class="footer__call-description">Звонок по России бесплатно</p>
+          <a class="footer__call-number" href="tel:+74952121671"
+            >8 (495) 212-16-71</a
+          >
+          <a href="#" class="footer__button button__fill">Перезвоните мне</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
