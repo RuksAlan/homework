@@ -1,0 +1,91 @@
+.footer {
+  background-color: var(--bg-main);
+}
+
+.footer__container {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (width <= 578px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+.footer__logo-message {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.footer__message-list {
+  display: flex;
+  gap: 10px;
+}
+
+.message__list-item {
+  transition: transform var(--transition-time);
+}
+
+.message__list-item:hover {
+  transform: scale(0.8);
+}
+
+.footer__politic {
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration-skip-ink: none;
+  color: #fff;
+  transition: color var(--transition-time);
+}
+
+.footer__politic:hover {
+  color: var(--accent-color);
+}
+
+.footer__call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer__call-description {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.footer__call-number {
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  transition: color var(--transition-time);
+}
+
+.footer__call-number:hover {
+  color: var(--accent-color);
+}
+
+.footer__button {
+  font-weight: 500;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+@media (width <= 578px) {
+  .footer__button {
+    padding: 20px 20px;
+  }
+}

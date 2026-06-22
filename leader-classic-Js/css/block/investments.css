@@ -1,0 +1,83 @@
+.investments {
+  padding-bottom: 140px;
+}
+
+.investments__title {
+  text-align: center;
+}
+
+.investments__subtitle {
+  max-width: 451px;
+  margin: 30px auto 100px;
+  text-align: center;
+}
+
+.investments__wrapper {
+  display: flex;
+  gap: 50px;
+}
+
+@media (width <= 992px) {
+  .investments__wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+.investments__card {
+  position: relative;
+  max-width: 500px;
+}
+
+@media (width > 992px) {
+  .investments__card {
+    margin: 0 auto;
+  }
+}
+
+@media (width <= 992px) {
+  .investments__card {
+    margin: 0 auto;
+  }
+}
+
+.investments__card-step {
+  /* min 320px max 1240px */
+  font-size: clamp(12px, 0.554rem + 0.98vw, 21px);
+  line-height: 130%;
+}
+
+.investments__card-subtitle {
+  font-weight: 500;
+  font-size: clamp(20px, 1.033rem + 1.09vw, 27px);
+  line-height: 130%;
+  margin: 20px auto 30px;
+}
+
+@media (width <= 992px) {
+  .investments__card-subtitle {
+    margin: 20px 0px;
+    max-width: 300px;
+  }
+}
+
+.card-margin {
+  margin: 20px auto 70px;
+}
+
+@media (width <= 992px) {
+  .card-margin {
+    margin: 20px 0px;
+    max-width: 300px;
+  }
+}
+
+.investments__description {
+  font-size: clamp(12px, 0.554rem + 0.98vw, 21px);
+  line-height: 159%;
+}
+
+.investments__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

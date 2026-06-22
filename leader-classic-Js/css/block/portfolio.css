@@ -1,0 +1,182 @@
+@media (width > 992px) {
+  .portfolio {
+    padding-bottom: 150px;
+    overflow: visible;
+  }
+}
+
+@media (width <= 992px) {
+  .portfolio {
+    padding-bottom: 50px;
+    overflow: visible;
+  }
+}
+
+.portfolio__container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+}
+
+.portfolio__profitability {
+  position: relative;
+}
+
+.profitability {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.profitability__info {
+  font-size: 30px;
+  line-height: 157%;
+}
+
+.profitability__percentage {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.profitability__risk {
+  display: inline-block;
+  font-size: 18px;
+  color: #c5c5c5;
+  border-radius: 35px;
+  background: linear-gradient(
+    120deg,
+    rgba(66, 89, 74, 0.4) 0%,
+    rgba(101, 204, 125, 0.22) 100%
+  );
+  padding: 5px;
+  width: 150px;
+}
+
+.profitability__input {
+  margin: 20px auto;
+}
+
+.profitability__choice {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.select__radio {
+  appearance: none;
+  position: absolute;
+  outline: none;
+}
+
+.select__radio:checked::before {
+  box-shadow: inset 0 0 0px 4px #109d44;
+}
+
+.select__radio::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 2px solid #6adb83;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  margin-left: -30px;
+  transition: box-shadow var(--transition-time);
+  top: 0%;
+}
+
+@media (width <= 992px) {
+  .portfolio__information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.offer__subtitle {
+  max-width: 567px;
+  margin-bottom: 30px;
+}
+
+.offer__description {
+  font-size: clamp(20px, 1.136rem + 0.57vw, 25px);
+  line-height: 158%;
+  max-width: 498px;
+  margin-bottom: 30px;
+}
+
+.result__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(233px, 1fr));
+  gap: 20px;
+}
+
+@media (width > 992px) {
+  .result__container {
+    margin-top: 180px;
+  }
+}
+
+@media (width <= 992px) {
+  .result__container {
+    margin-top: 100px;
+  }
+}
+
+.result {
+  text-align: center;
+  max-width: 400px;
+}
+
+.result__numbers {
+  font-weight: 700;
+  font-size: clamp(35px, 1.619rem + 2.84vw, 60px);
+  background: linear-gradient(148deg, #65ca7c 0%, #4f815c 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.result__description {
+  font-weight: 500;
+  font-size: clamp(20px, 1.114rem + 0.68vw, 26px);
+  margin-top: 20px;
+}
+
+.gauge {
+  position: absolute;
+  top: -35%;
+  right: -30%;
+  width: 360px;
+}
+
+.gaugeSvg {
+  width: 100%;
+  overflow: visible;
+}
+
+.track,
+.progress {
+  fill: none;
+  stroke-width: 18;
+  stroke-linecap: round;
+}
+
+.track {
+  stroke: rgba(255, 255, 255, 0.35);
+}
+
+.progress {
+  stroke: #6cff2f;
+  filter: drop-shadow(0 0 8px #6cff2f);
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #6cff2f;
+}
